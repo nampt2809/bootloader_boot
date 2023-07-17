@@ -256,27 +256,27 @@ static void sys_boot(void){
       uint32_t test_var =0;
       
       /* APPPPPPPPPPPPPPPPP CHECKKKKKK--------------------*/
-      if(current_pos<1024)// TONG SO BYTE 
-      { 
-        crc32cal_WriteData(g_buffer_flashEX,512);
-      }
-      else{
-        test_var = current_pos%512;
-        crc32cal_WriteData(g_buffer_flashEX,test_var);}
+//      if(current_pos<1024)// TONG SO BYTE 
+//      { 
+//        crc32cal_WriteData(g_buffer_flashEX,512);
+//      }
+//      else{
+//        test_var = current_pos%512;
+//        crc32cal_WriteData(g_buffer_flashEX,test_var);}
       }while(current_pos<1024); //TONG SO BYTE 
     }
-    if(system_var.crc32CHECK == crc32cal_Get32bitResult())
-    {
+//    if(system_var.crc32CHECK == crc32cal_Get32bitResult())
+//    {
       system_var.UpdateFirmWare_Flag = 0;
       flash_write_buffer(USER_SPI1_MASTER,val_tran_0,Start_Add_FLASH_EX,1);
       NVIC_SystemReset();
       
-    }
-    else 
-    {
-      system_var.UpdateFirmWare_Flag = 1;
-      NVIC_SystemReset();
-    }
+//    }
+//    else 
+//    {
+//      system_var.UpdateFirmWare_Flag = 1;
+//      NVIC_SystemReset();
+//    }
     /* Program user buffer into flash*/
     /* Verify programming by reading back from flash directly*/
    
