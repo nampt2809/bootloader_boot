@@ -1,137 +1,113 @@
 # ninja log v5
-2	73	7101481733963755	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/startup/startup_MKE06Z4.o	7f083686f34b2730
-404	544	7101481739049849	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_port.o	3e020b9ac4779587
-40	174	7101481735419861	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/clock_config.o	fd3a4ff238fe409b
-21	204	7101481735369704	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/pin_mux.o	813d3be1f93e2da9
-358	504	7100836243799465	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/hello_world.o	d9ca7bcc58a180ec
-10	189	7101481735339786	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/board.o	9b36887154bab45
-77	241	7101481735858381	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/lists/fsl_component_generic_list.o	4e79761c721c3b68
-51	227	7101481735878627	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/uart/fsl_adapter_uart.o	2a5ee5a439dcf5ce
-28	154	7101481735250027	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/device/system_MKE06Z4.o	36b677163c85ce8d
-233	355	7101481737005328	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common.o	8b67dc1df13b5380
-181	397	7101481737653577	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_clock.o	10e5e04d4be5b305
-159	317	7101481736895626	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common_arm.o	ae68082f4ab4ae50
-339	504	7101481738710757	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_gpio.o	7893346339e446c8
-195	520	7101481738411550	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_flash.o	f2736c6ae9a6dc59
-706	825	7101481741902207	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_assert.o	9c5662527ced15c6
-247	480	7101481738361681	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/main.o	2a52b6f75015661d
-362	699	7101481740236662	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_uart.o	66c19fda1508b1ca
-730	952	7101481743238630	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_debug_console.o	96a033169679d0ba
-960	1060	7101481744295805	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/Bootloader.out	ca9ba8ea351a6593
-551	724	7101481740864999	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_flash_spi.o	35536789ca66a5f6
-687	819	7101481741902207	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_variables.o	d43f875518332075
-211	464	7101481738331760	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_ftm.o	6ff7019885cdce1
-472	744	7101481740984662	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_spi.o	c001f4d7ec15ba78
-670	884	7101481742550471	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_i2c_soft.o	e5326b2a0aeb7e9f
-527	662	7101481740186800	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_uart.o	ba8ff63da1d05275
-511	679	7101481740186800	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_rs485.o	5a68ca10803df35a
-647	839	7101481742101674	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_timer.o	11272edd63e0c4e3
-486	641	7101481740116983	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/crc32_cal.o	7534ec58bc7a6dfe
-1	54	7101484750627705	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/startup/startup_MKE06Z4.o	7f083686f34b2730
-15	183	7101484752213458	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/pin_mux.o	813d3be1f93e2da9
-8	198	7101484752263331	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/board.o	9b36887154bab45
-42	224	7101484752622371	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/device/system_MKE06Z4.o	36b677163c85ce8d
-22	238	7101484752612401	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/lists/fsl_component_generic_list.o	4e79761c721c3b68
-32	272	7101484753081136	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/uart/fsl_adapter_uart.o	2a5ee5a439dcf5ce
-56	318	7101484753559852	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/clock_config.o	fd3a4ff238fe409b
-231	341	7101484753809192	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common.o	8b67dc1df13b5380
-245	363	7101484753998700	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common_arm.o	ae68082f4ab4ae50
-204	425	7101484754646951	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_clock.o	10e5e04d4be5b305
-190	458	7101484754966092	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_ftm.o	6ff7019885cdce1
-326	484	7101484755115693	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_gpio.o	7893346339e446c8
-369	528	7101484755684177	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/crc32_cal.o	7534ec58bc7a6dfe
-278	586	7101484756232705	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_flash.o	f2736c6ae9a6dc59
-466	607	7101484756332442	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_port.o	3e020b9ac4779587
-348	644	7101484756831098	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_uart.o	66c19fda1508b1ca
-433	665	7101484757040536	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/main.o	2a52b6f75015661d
-490	742	7101484757818465	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_spi.o	c001f4d7ec15ba78
-613	766	7101484757997977	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_uart.o	ba8ff63da1d05275
-592	780	7101484757958081	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_flash_spi.o	35536789ca66a5f6
-534	796	7101484757918188	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_i2c_soft.o	e5326b2a0aeb7e9f
-671	834	7101484758736003	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_rs485.o	5a68ca10803df35a
-650	848	7101484758805816	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_timer.o	11272edd63e0c4e3
-772	873	7101484759154879	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_assert.o	9c5662527ced15c6
-786	898	7101484759404228	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_variables.o	d43f875518332075
-748	1000	7101484760401539	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_debug_console.o	96a033169679d0ba
-1006	1083	7101484761215643	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/Bootloader.out	ca9ba8ea351a6593
-1	63	7101485842543041	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/startup/startup_MKE06Z4.o	7f083686f34b2730
-19	136	7101485843660038	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/device/system_MKE06Z4.o	36b677163c85ce8d
-11	158	7101485843769745	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/board.o	9b36887154bab45
-30	173	7101485843779720	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/clock_config.o	fd3a4ff238fe409b
-50	197	7101485844118832	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/board/pin_mux.o	813d3be1f93e2da9
-39	213	7101485844288363	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/uart/fsl_adapter_uart.o	2a5ee5a439dcf5ce
-65	238	7101485844318289	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/component/lists/fsl_component_generic_list.o	4e79761c721c3b68
-164	331	7101485845495133	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common.o	8b67dc1df13b5380
-203	356	7101485845515073	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_common_arm.o	ae68082f4ab4ae50
-143	397	7101485846263078	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_clock.o	10e5e04d4be5b305
-221	481	7101485847100836	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_flash.o	f2736c6ae9a6dc59
-180	502	7101485847180629	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_ftm.o	6ff7019885cdce1
-244	530	7101485847519716	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_uart.o	66c19fda1508b1ca
-403	545	7101485847609479	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_port.o	3e020b9ac4779587
-362	567	7101485847719177	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/main.o	2a52b6f75015661d
-347	589	7101485848018376	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_spi.o	c001f4d7ec15ba78
-510	675	7101485849035649	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/crc32_cal.o	7534ec58bc7a6dfe
-551	696	7101485849195224	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_rs485.o	5a68ca10803df35a
-487	711	7101485849265044	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/drivers/fsl_gpio.o	7893346339e446c8
-537	748	7101485849783656	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_flash_spi.o	35536789ca66a5f6
-573	777	7101485850062917	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_i2c_soft.o	e5326b2a0aeb7e9f
-596	789	7101485850102805	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_timer.o	11272edd63e0c4e3
-702	824	7101485850551598	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_variables.o	d43f875518332075
-681	835	7101485850591486	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/source/vac_uart.o	ba8ff63da1d05275
-717	857	7101485850880713	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_assert.o	9c5662527ced15c6
-755	977	7101485852070735	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/obj/utilities/fsl_debug_console.o	96a033169679d0ba
-984	1062	7101485852901504	C:/Users/Admin M1/Desktop/CodeNampt/Bootloader/debug/Bootloader.out	ca9ba8ea351a6593
-0	47	7112935385462787	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
-8	215	7112935387337787	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
-14	233	7112935387447472	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
-17	303	7112935388205446	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
-220	345	7112935388574465	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
-33	355	7112935388584455	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
-49	372	7112935388614371	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
-238	395	7112935389142940	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
-27	416	7112935389282576	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
-308	457	7112935389721393	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
-399	503	7112935390180176	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
-377	521	7112935390289882	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
-351	614	7112935391337077	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
-360	644	7112935391626332	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
-526	662	7112935391716060	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
-507	705	7112935392234680	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
-462	724	7112935392314468	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
-421	745	7112935392523904	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
-668	797	7112935393162213	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
-710	829	7112935393491312	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
-649	847	7112935393531212	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
-619	852	7112935393571110	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
-729	876	7112935393970051	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
-749	889	7112935394029889	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
-803	932	7112935394538513	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
-835	1057	7112935395765231	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
-1062	1156	7112935396737064	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
-6	27	7112936027638838	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
-1	104	7112936028436722	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
-12	116	7112936028466634	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
-9	136	7112936028725935	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
-29	159	7112936028905460	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
-20	169	7112936028965301	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
-15	211	7112936029483898	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
-110	241	7112936029793073	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
-142	266	7112936030052381	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
-122	301	7112936030401455	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
-216	342	7112936030820324	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
-246	365	7112936030880169	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
-174	440	7112936031777774	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
-165	469	7112936031977234	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
-272	481	7112936032057025	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
-346	552	7112936032914724	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
-370	576	7112936033134142	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
-487	615	7112936033562997	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
-475	625	7112936033582948	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
-306	649	7112936033712594	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
-557	701	7112936034410726	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
-445	714	7112936034430673	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
-580	719	7112936034500489	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
-621	760	7112936035009131	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
-630	772	7112936035068973	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
-654	872	7112936036116460	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
-877	953	7112936036905305	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
+300	604	7113811947783984	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
+750	856	7113811950197536	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
+608	875	7113811950287301	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
+813	1054	7113811952291944	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
+236	527	7113811947006077	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
+1	183	7113811943585214	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
+686	833	7113811950087831	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
+6	34	7113811942059308	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
+36	314	7113811944851827	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
+25	295	7113811944702229	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
+380	547	7113811947165642	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
+20	355	7113811945290655	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
+15	256	7113811944043986	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
+188	375	7113811945480159	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
+9	219	7113811943914344	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
+360	493	7113811946706883	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
+319	456	7113811946248101	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
+261	405	7113811945809277	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
+499	662	7113811948382392	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
+461	680	7113811948422293	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
+409	745	7113811949190240	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
+668	808	7113811949848467	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
+532	722	7113811948940903	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
+551	701	7113811948741442	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
+727	880	7113811950446867	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
+706	861	7113811950247417	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
+1059	1122	7113811952980096	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
+1132	1140	7113811953239282	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.hex	a2beeae3357dd23a
+213	399	7113934739340242	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
+2	551	7113934740696607	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
+335	622	7113934741295242	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
+329	643	7113934741355095	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
+332	673	7113934741474774	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
+344	732	7113934742521960	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
+402	758	7113934742681538	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
+555	785	7113934742980738	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
+648	847	7113934743668896	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
+737	880	7113934743908258	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
+763	918	7113934744187517	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
+626	966	7113934744875676	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
+789	989	7113934744975427	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
+677	1014	7113934745314498	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
+851	1116	7113934746381643	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
+888	1141	7113934746521273	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
+923	1150	7113934746640965	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
+971	1185	7113934747029914	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
+1018	1236	7113934747199474	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
+1121	1309	7113934748326460	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
+993	1318	7113934748326460	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
+1146	1364	7113934748765273	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
+1241	1369	7113934748775253	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
+1190	1374	7113934748795193	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
+1156	1388	7113934748835120	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
+1315	1583	7113934751098733	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
+1589	1848	7113934753745539	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
+1858	1933	7113934754674155	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.hex	a2beeae3357dd23a
+6	54	7113939816809776	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
+1	198	7113939818156178	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
+9	207	7113939818176126	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
+19	287	7113939819003923	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
+22	307	7113939819163490	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
+212	329	7113939819472666	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
+56	340	7113939819502593	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
+15	362	7113939819582366	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
+203	370	7113939819801786	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
+292	435	7113939820549776	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
+312	461	7113939820779181	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
+366	517	7113939821357616	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
+375	557	7113939821756565	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
+345	613	7113939822315060	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
+335	634	7113939822414794	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
+441	649	7113939822564399	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
+522	713	7113939823332336	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
+618	755	7113939823741244	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
+654	783	7113939823930743	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
+467	796	7113939823880879	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
+640	806	7113939823990597	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
+562	823	7113939824180076	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
+717	838	7113939824598951	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
+762	891	7113939825127541	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
+790	910	7113939825317031	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
+802	1017	7113939826364514	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
+1022	1089	7113939827082602	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
+1099	1109	7113939827351596	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.hex	a2beeae3357dd23a
+6	29	7113940071661800	F:/10. VAC/1. VAC_BOOT/debug/obj/startup/startup_MKE06Z4.o	c57073c4a1c0afce
+1	118	7113940072479623	F:/10. VAC/1. VAC_BOOT/debug/obj/board/board.o	f9fc44e3a7bc4f7d
+21	127	7113940072499584	F:/10. VAC/1. VAC_BOOT/debug/obj/device/system_MKE06Z4.o	1c85639e22021b2e
+9	156	7113940072699041	F:/10. VAC/1. VAC_BOOT/debug/obj/board/pin_mux.o	b071bee27a4b4b8e
+13	164	7113940072738921	F:/10. VAC/1. VAC_BOOT/debug/obj/component/uart/fsl_adapter_uart.o	91afa4e81168fc46
+17	181	7113940072858606	F:/10. VAC/1. VAC_BOOT/debug/obj/component/lists/fsl_component_generic_list.o	95e44d64d7f79006
+31	215	7113940073457011	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_clock.o	3ba643976dc4f391
+123	260	7113940073925752	F:/10. VAC/1. VAC_BOOT/debug/obj/board/clock_config.o	ed0f619df85e7783
+170	279	7113940074015505	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common.o	83899558eb268171
+160	288	7113940074015505	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_common_arm.o	b0a77e8bc57e7596
+133	306	7113940074224944	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_gpio.o	245aebe3c4ac003c
+264	386	7113940075172420	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_port.o	8f95fc390d5d12de
+293	431	7113940075621211	F:/10. VAC/1. VAC_BOOT/debug/obj/source/crc32_cal.o	7853822dec7e69e8
+186	456	7113940075780795	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_ftm.o	432548c268120b25
+311	479	7113940076099931	F:/10. VAC/1. VAC_BOOT/debug/obj/source/main.o	9562cb0d0385f67a
+220	522	7113940076498872	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_flash.o	628dd234f4d0f3ca
+283	547	7113940076748199	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_spi.o	892f590d82bbfe11
+392	589	7113940077197001	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_flash_spi.o	f037bf8a56757eb5
+484	626	7113940077585970	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_rs485.o	30988d85ec55cd48
+437	657	7113940077855243	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_i2c_soft.o	dac6097f5b695e29
+527	674	7113940077954976	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_uart.o	ce9fef6927ea23f2
+594	701	7113940078333975	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_assert.o	89fb43bb4d1cf6dd
+552	714	7113940078453650	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_timer.o	ba09c7dafb225137
+462	751	7113940078812676	F:/10. VAC/1. VAC_BOOT/debug/obj/drivers/fsl_uart.o	f01b0209e2104cd5
+631	756	7113940078862544	F:/10. VAC/1. VAC_BOOT/debug/obj/source/vac_variables.o	da5d5a38d41d4dc3
+662	877	7113940080099467	F:/10. VAC/1. VAC_BOOT/debug/obj/utilities/fsl_debug_console.o	60a395d9a40eac52
+884	961	7113940080917347	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.out	95e2d6acc1b1fac1
+969	978	7113940081166390	F:/10. VAC/1. VAC_BOOT/debug/Bootloader.hex	a2beeae3357dd23a

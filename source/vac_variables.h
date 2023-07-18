@@ -14,7 +14,7 @@ typedef struct{
   uint8_t  u8NewFirmFlag1;
   uint8_t  u8NewFirmFlag2;
   uint8_t  u8NewFirmFlag3;
-  uint8_t num_byte;
+  uint16_t num_byte;
   uint8_t addr;
   uint8_t crc32CHECK;
 }SYSTEM_VAR_T;

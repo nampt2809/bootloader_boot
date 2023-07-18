@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\settings\Bootloader.debug.general.xcl" --backend -f "C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\settings\Bootloader.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.general.xcl" --backend -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\settings\Bootloader.debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\settings\Bootloader.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.general.xcl" --debug_file=$debugfile --backend -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.driver.xcl" 
 }

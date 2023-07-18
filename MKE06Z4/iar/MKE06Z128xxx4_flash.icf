@@ -24,8 +24,8 @@
 **
 ** ###################################################################
 */
-define symbol app_offset               = 0xc000;
-define symbol m_interrupts_start       = 0x00000000+ app_offset;
+define symbol app_offset               = 0x0000;
+define symbol m_interrupts_start       = app_offset;
 define symbol m_interrupts_end         = 0x000001FF+ app_offset;
 
 define symbol m_flash_config_start     = 0x00000400+ app_offset;

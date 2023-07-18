@@ -19,9 +19,9 @@ static void software_init(void);
 //nampt
 
 #define Start_Add_FLASH_EX 600000
-#define ADD_FLEX 600100 
-#define BUFFER_LEN 128
-#define APP_FLASH_ADD_START 0x0c000
+#define BUFFER_LEN 1
+#define APP_FLASH_ADD_START 0x0C000
+
 
 extern SYSTEM_VAR_T system_var;
 static void sys_jumpApp(void);
@@ -33,7 +33,6 @@ static flash_config_t s_flashDriver;
 /*! @brief Buffer for program */
 static uint32_t s_buffer[BUFFER_LEN];
 /*! @brief Buffer for readback */
-static uint32_t s_buffer_rbc[BUFFER_LEN];
 
 uint8_t val_tran_1[] = {01};
 uint8_t val_tran_0[] = {01};
@@ -156,14 +155,17 @@ int main(void)
     //nampt
     
     
-    flash_erase_sector(USER_SPI1_MASTER,Start_Add_FLASH_EX);
+//    flash_erase_sector(USER_SPI1_MASTER,Start_Add_FLASH_EX);
     
-    flash_write_buffer(USER_SPI1_MASTER, val_tran_1, Start_Add_FLASH_EX,1);
-    flash_read_buffer(USER_SPI1_MASTER,&system_var.UpdateFirmWare_Flag, Start_Add_FLASH_EX,1);
-    flash_read_buffer(USER_SPI1_MASTER,&system_var.addr, Start_Add_FLASH_EX+10,1);
-    flash_read_buffer(USER_SPI1_MASTER,&system_var.num_byte, Start_Add_FLASH_EX+20,1);
-    flash_read_buffer(USER_SPI1_MASTER,&system_var.crc32CHECK, Start_Add_FLASH_EX+30,1);
-    if(system_var.UpdateFirmWare_Flag == 1){
+//    flash_write_buffer(USER_SPI1_MASTER, val_tran_1, Start_Add_FLASH_EX,1);
+    flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag1, 0x0000,1);
+    flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag2, 0x0001,1);
+    flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag3, 0x0002,1);
+    uint8_t u8_num_hi, u8_num_lo;
+    flash_read_buffer(USER_SPI1_MASTER,&u8_num_hi, 0x0003,1);
+    flash_read_buffer(USER_SPI1_MASTER,&u8_num_lo, 0x0004,1); //do dai file update
+    system_var.num_byte = (uint16_t)(u8_num_hi<<8) | (u8_num_lo);
+    if(((system_var.u8NewFirmFlag1 == 1)&&(system_var.u8NewFirmFlag2 == 1))&&(system_var.u8NewFirmFlag3 == 1)){
       sys_boot();
     }
     else{
@@ -188,11 +190,9 @@ static void software_init(void){
 //nampt
 static void sys_boot(void){
     status_t result;    /* Return code from each flash driver function */
-    uint32_t destAdrss; /* Address of the target location */
-    uint32_t i;
+   
+//    uint32_t i;
     
-    uint32_t pflashBlockBase;
-    uint32_t pflashTotalSize;
     uint32_t pflashSectorSize;
     
     //----------------------------------------INIT FLASh----------------------------------------------//
@@ -204,87 +204,58 @@ static void sys_boot(void){
     {
         error_trap();
     }
-    pflashBlockBase  = s_flashDriver.PFlashBlockBase;
-    pflashTotalSize  = s_flashDriver.PFlashTotalSize;
-    pflashSectorSize = s_flashDriver.PFlashSectorSize;
+
+    pflashSectorSize = s_flashDriver.PFlashSectorSize; //512
     
     
     //--------------------------------------ERASE FLASH INTERNAL-----------------------------------------//
-//#ifndef SECTOR_INDEX_FROM_END
-//#define SECTOR_INDEX_FROM_END 10U
-//#endif
-//
+
 ///* Erase a sector from destAdrss. */
-//#if defined(FSL_FEATURE_FLASH_HAS_PFLASH_BLOCK_SWAP) && FSL_FEATURE_FLASH_HAS_PFLASH_BLOCK_SWAP
-//    /* Note: we should make sure that the sector shouldn't be swap indicator sector*/
-//    destAdrss = pflashBlockBase + (pflashTotalSize - (SECTOR_INDEX_FROM_END * pflashSectorSize * 2));
-//#else
-//    destAdrss = pflashBlockBase + (pflashTotalSize - (SECTOR_INDEX_FROM_END * pflashSectorSize));
-//#endif
-    //--------------------------------------READ FLASH_EXTERNAL-----------------------------------------//
-    /*breaf
-    s_buffer: buffer de ghi vao flash noi
-    g_buffer_flashEX: doc tu flash ngoai ve
-*/
-    /* Prepare user buffer. */
-    
-    flash_erase_sector(USER_SPI1_MASTER,ADD_FLEX);  
-    flash_write_buffer(USER_SPI1_MASTER, sample_file, ADD_FLEX,512);
-    crc32cal_Init();
-    uint32_t positionFirm = ADD_FLEX;
+
+    uint32_t positionFirm = Start_Add_FLASH_EX;
     uint32_t des_position = APP_FLASH_ADD_START;
     uint32_t current_pos = 0 ;
-    uint32_t j= 0;
+//    uint32_t j,k= 0;
+    uint32_t Re_Num = 0, Im_Num = 0;
+    Re_Num = system_var.num_byte / 4; //512;
+    Im_Num = system_var.num_byte % 4; //512;
     if(FLASH_Erase(&s_flashDriver, APP_FLASH_ADD_START, pflashSectorSize, kFLASH_ApiEraseKey)== kStatus_FLASH_Success)
     {
+      
+      if(Re_Num > 0){
       do{
-        
-        flash_read_buffer(USER_SPI1_MASTER,g_buffer_flashEX,positionFirm,400);
-        for(i=0;i<128;i++)
-        {
-          s_buffer[i]=g_buffer_flashEX[j]|g_buffer_flashEX[1+j]<<8|g_buffer_flashEX[j+2]<<16|g_buffer_flashEX[j+3]<<24;
-          j=j+4;
-        }
+                
+        flash_read_buffer(USER_SPI1_MASTER,g_buffer_flashEX,positionFirm,4);
+        s_buffer[0]=g_buffer_flashEX[0]|g_buffer_flashEX[1]<<8|g_buffer_flashEX[2]<<16|g_buffer_flashEX[3]<<24;
+//        for(i=0;i<Re_Num;i++)
+//        {
+//          s_buffer[i]=g_buffer_flashEX[j]|g_buffer_flashEX[1+j]<<8|g_buffer_flashEX[j+2]<<16|g_buffer_flashEX[j+3]<<24;
+//          j=j+4;
+//        }
         FLASH_Erase(&s_flashDriver, des_position, pflashSectorSize, kFLASH_ApiEraseKey);
       if(FLASH_Program(&s_flashDriver, des_position, s_buffer, sizeof(s_buffer)) == kStatus_FLASH_Success)
       {
-        des_position += 512;
+        des_position += 4;
       }
+      current_pos +=1;
+      positionFirm+= 4;
+       }while(current_pos < Re_Num);
+      } 
       
-      current_pos +=512;
-      positionFirm+= 512;
-      uint32_t test_var =0;
+      if(Im_Num > 0){
       
-      /* APPPPPPPPPPPPPPPPP CHECKKKKKK--------------------*/
-//      if(current_pos<1024)// TONG SO BYTE 
-//      { 
-//        crc32cal_WriteData(g_buffer_flashEX,512);
-//      }
-//      else{
-//        test_var = current_pos%512;
-//        crc32cal_WriteData(g_buffer_flashEX,test_var);}
-      }while(current_pos<1024); //TONG SO BYTE 
-    }
-//    if(system_var.crc32CHECK == crc32cal_Get32bitResult())
-//    {
-      system_var.UpdateFirmWare_Flag = 0;
-      flash_write_buffer(USER_SPI1_MASTER,val_tran_0,Start_Add_FLASH_EX,1);
+        flash_read_buffer(USER_SPI1_MASTER,g_buffer_flashEX,positionFirm,4);
+        s_buffer[0]=g_buffer_flashEX[0]|g_buffer_flashEX[1]<<8|g_buffer_flashEX[2]<<16|g_buffer_flashEX[3]<<24;
+        FLASH_Erase(&s_flashDriver, des_position, pflashSectorSize, kFLASH_ApiEraseKey);
+        FLASH_Program(&s_flashDriver, des_position, s_buffer, sizeof(s_buffer));
+        }    
+      }
+//      system_var.UpdateFirmWare_Flag = 0;
+      flash_write_buffer(USER_SPI1_MASTER,0,0x0000,1);
+      flash_write_buffer(USER_SPI1_MASTER,0,0x0001,1);
+      flash_write_buffer(USER_SPI1_MASTER,0,0x0002,1);
       NVIC_SystemReset();
-      
-//    }
-//    else 
-//    {
-//      system_var.UpdateFirmWare_Flag = 1;
-//      NVIC_SystemReset();
-//    }
-    /* Program user buffer into flash*/
-    /* Verify programming by reading back from flash directly*/
-   
-    for(uint32_t k = 0;k<512;k++)
-    {
-      s_buffer_rbc[k] = *(volatile uint32_t *)(APP_FLASH_ADD_START+k*4);
-    }
-    FLASH_Erase(&s_flashDriver, destAdrss, pflashSectorSize, kFLASH_ApiEraseKey);    
+
 }
 static void sys_jumpApp(void){
   uint32_t startup = APP_FLASH_ADD_START;

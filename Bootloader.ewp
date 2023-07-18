@@ -643,15 +643,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>Bootloader.srec</state>
+                    <state>Bootloader.hex</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -659,7 +659,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -669,7 +669,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>208</hasPrio>
+                <hasPrio>240</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
