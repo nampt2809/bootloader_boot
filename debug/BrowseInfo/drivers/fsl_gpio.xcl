@@ -1,29 +1,29 @@
-"C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\drivers\fsl_gpio.c"
+"C:\Users\Admin M1\Desktop\CodeNampt\BootLD\drivers\fsl_gpio.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\debug\BrowseInfo\drivers\fsl_gpio.pbi.dep
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\debug\BrowseInfo\drivers\fsl_gpio.pbi.dep
 -o
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\debug\BrowseInfo\drivers\fsl_gpio.pbi
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\debug\BrowseInfo\drivers\fsl_gpio.pbi
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\drivers
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\drivers
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/board\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/board\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/CMSIS\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/CMSIS\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/component/lists\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/component/lists\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/component/uart\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/component/uart\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/device\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/device\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/drivers\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/drivers\
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader/utilities\
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD/utilities\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -31,19 +31,19 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\board
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\board
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\CMSIS
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\CMSIS
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\component\lists
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\component\lists
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\component\uart
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\component\uart
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\device
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\device
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\drivers
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\drivers
 -I
-C:\Users\Admin M1\Desktop\CodeNampt\Bootloader\utilities
+C:\Users\Admin M1\Desktop\CodeNampt\BootLD\utilities
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

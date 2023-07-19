@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.general.xcl" --backend -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Admin M1\Desktop\CodeNampt\BootLD\settings\Bootloader.debug.general.xcl" --backend -f "C:\Users\Admin M1\Desktop\CodeNampt\BootLD\settings\Bootloader.debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.general.xcl" "--debug_file=%~1" --backend -f "F:\10. VAC\1. VAC_BOOT\settings\Bootloader.debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Admin M1\Desktop\CodeNampt\BootLD\settings\Bootloader.debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Admin M1\Desktop\CodeNampt\BootLD\settings\Bootloader.debug.driver.xcl" 
 
 @echo off 
 :end
