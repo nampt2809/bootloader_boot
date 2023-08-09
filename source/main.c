@@ -18,9 +18,9 @@ static void software_init(void);
 
 //nampt
 
-#define Start_Add_FLASH_EX 0x007F0000
+#define Start_Add_FLASH_EX 0x600000
 #define BUFFER_LEN 128
-#define APP_FLASH_ADD_START 0x0000C000
+#define APP_FLASH_ADD_START 0x00008000
 
 
 extern SYSTEM_VAR_T system_var;
@@ -33,7 +33,7 @@ static flash_config_t s_flashDriver;
 /*! @brief Buffer for program */
 static uint32_t s_buffer[BUFFER_LEN];
 /*! @brief Buffer for readback */
-
+uint8_t UpdateFirmWare_Flag = 0;
 uint8_t val_tran_1[] = {01};
 uint8_t val_tran_0[] = {01};
 uint32_t flash_read(uint32_t add);
@@ -166,10 +166,12 @@ int main(void)
   flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag1, 0x0000,1);
   flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag2, 0x0001,1);
   flash_read_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag3, 0x0002,1);
-  uint8_t u8_num_hi, u8_num_lo;
-  flash_read_buffer(USER_SPI1_MASTER,&u8_num_hi, 0x03,1);
-  flash_read_buffer(USER_SPI1_MASTER,&u8_num_lo, 0x04,1); //do dai file update
-  system_var.num_byte = (uint16_t)(u8_num_hi<<8) | (u8_num_lo);
+  uint8_t length1,length2,length3,length4;
+  flash_read_buffer(USER_SPI1_MASTER,&length1, 0x03,1);
+  flash_read_buffer(USER_SPI1_MASTER,&length2, 0x04,1); //do dai file update
+  flash_read_buffer(USER_SPI1_MASTER,&length3, 0x08,1);
+  flash_read_buffer(USER_SPI1_MASTER,&length4, 0x09,1); //do dai file update
+  system_var.num_byte = (uint32_t)(length1) | (uint32_t)(length2<<8)| (uint32_t)(length3<<16)| (uint32_t)(length4<<24);
   if(((system_var.u8NewFirmFlag1 == 1)&&(system_var.u8NewFirmFlag2 == 1))&&(system_var.u8NewFirmFlag3 == 1)){
     sys_boot();
   }
@@ -259,24 +261,27 @@ static void sys_boot(void){
       FLASH_Program(&s_flashDriver, des_position, s_buffer, sizeof(s_buffer) == kStatus_FLASH_Success);
       
     }
-    //      system_var.UpdateFirmWare_Flag = 0;
+    //system_var.UpdateFirmWare_Flag = 0;
     system_var.u8NewFirmFlag1 =0;
     system_var.u8NewFirmFlag2=0;
     system_var.u8NewFirmFlag3=0;
+    UpdateFirmWare_Flag =1;
     flash_write_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag1,0x00,1);
     flash_write_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag2,0x01,1);
     flash_write_buffer(USER_SPI1_MASTER,&system_var.u8NewFirmFlag3,0x02,1);
+    flash_write_buffer(USER_SPI1_MASTER,&UpdateFirmWare_Flag,0xA,1);
+    
     NVIC_SystemReset();
   }
 }
 static void sys_jumpApp(void){
-  uint32_t appEntry =(*(unsigned int*)0xc004);
-  uint32_t appStack = (*(unsigned int*)0xc000);
+  uint32_t appEntry =(*(unsigned int*)0x8004);
+  uint32_t appStack = (*(unsigned int*)0x8000);
   static void (*farewellBootloader)(void) = 0;
   farewellBootloader = (void (*)(void))appEntry ;
   
   
-  SCB->VTOR = 0xc000;
+  SCB->VTOR = 0x8000;
   
   // Set stack pointers to the application stack pointer.
   __set_MSP(appStack );
