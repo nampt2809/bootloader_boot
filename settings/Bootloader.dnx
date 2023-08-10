@@ -20,7 +20,7 @@
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\NXP\MKE06Z128xxx4.ddf</MemConfigValue>
     </PlDriver>
     <DebugChecksum>
-        <Checksum>3504049110</Checksum>
+        <Checksum>2633462536</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>

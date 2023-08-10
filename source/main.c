@@ -171,7 +171,8 @@ int main(void)
   flash_read_buffer(USER_SPI1_MASTER,&length2, 0x04,1); //do dai file update
   flash_read_buffer(USER_SPI1_MASTER,&length3, 0x08,1);
   flash_read_buffer(USER_SPI1_MASTER,&length4, 0x09,1); //do dai file update
-  system_var.num_byte = (uint32_t)(length1) | (uint32_t)(length2<<8)| (uint32_t)(length3<<16)| (uint32_t)(length4<<24);
+  //system_var.num_byte = (uint32_t)(length1) | (uint32_t)(length2<<8)| (uint32_t)(length3<<16)| (uint32_t)(length4<<24);
+  system_var.num_byte = 98304;
   if(((system_var.u8NewFirmFlag1 == 1)&&(system_var.u8NewFirmFlag2 == 1))&&(system_var.u8NewFirmFlag3 == 1)){
     sys_boot();
   }
